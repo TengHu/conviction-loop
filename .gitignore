@@ -17,6 +17,10 @@ oss/
 
 # Personal scratch notes
 NOTES.md
+arch.md
+
+# Local MCP server config (may contain machine-specific paths/secrets)
+.mcp.json
 
 .DS_Store
 *.lock
