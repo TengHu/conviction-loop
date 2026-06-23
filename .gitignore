@@ -7,6 +7,11 @@ book/
 .claude/settings.local.json
 .claude/scheduled_tasks.lock
 
+# Secrets — real API keys live in .env (never commit). .env.example is the tracked template.
+.env
+.env.*
+!.env.example
+
 # Cloned reference repos, scratch
 oss/
 
