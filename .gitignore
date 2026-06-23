@@ -1,5 +1,5 @@
 # Your actual book is private — never commit it.
-# Copy template/ to book/ and work there; book/ stays local.
+# Copy template_book/ to book/ and work there; book/ stays local.
 book/
 
 # Local Claude Code state / secrets

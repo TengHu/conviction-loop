@@ -45,7 +45,7 @@ See [`arch.md`](./arch.md) for the full design and rationale.
 ## Quickstart
 
 1. Open this repo in **Claude Code** (the skills auto-load from `.claude/skills/`).
-2. Seed your private book: `cp -r template book` (your `book/` is gitignored — it never leaves your machine).
+2. Seed your private book: `cp -r template_book book` (your `book/` is gitignored — it never leaves your machine).
 3. Edit `book/portfolio/README.md` — your **goal + constraints** (the only thing you author by hand).
 4. `/create-thesis` — paste a belief or a dump; the framework writes the thesis + claims.
 5. `/daily-run` — score the claims into convictions.
