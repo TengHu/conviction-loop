@@ -1,0 +1,43 @@
+thesis: demo-chip
+generated: 2026-06-20
+note: MOCK claims for demonstrating the verdict→bet→execution loop. Not real.
+
+# conviction (this thesis) = min(load-bearing scores) = min(65, 60, 70) = 60
+
+claims:
+  - id: chip-hbm-tight
+    claim: "HBM supply stays tight into 2026"
+    load_bearing: true
+    falsification:
+      mode: any
+      legs:
+        - class: quantitative
+          predicate: "Spot HBM price falls > 15% peak-to-trough over the quarter"
+          evaluate_on: close
+    fetch: "memory spot price series"
+    score: 65
+    score_updated: 2026-06-20
+
+  - id: chip-pricing-firm
+    claim: "Contract pricing holds firm (no give-back in negotiations)"
+    load_bearing: true
+    falsification:
+      mode: any
+      legs:
+        - class: textual
+          predicate: "A major buyer reports a contract price cut"
+    fetch: "buyer earnings calls; trade press"
+    score: 60
+    score_updated: 2026-06-20
+
+  - id: chip-demand-durable
+    claim: "AI accelerator demand for HBM is durable through 2026"
+    load_bearing: true
+    falsification:
+      mode: any
+      legs:
+        - class: textual
+          predicate: "A top-3 accelerator vendor cuts HBM orders"
+    fetch: "vendor guidance; supply-chain checks"
+    score: 70
+    score_updated: 2026-06-20

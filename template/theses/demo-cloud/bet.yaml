@@ -1,0 +1,5 @@
+thesis: demo-cloud
+# MOCK shape — illustrates the bet.yaml format. Not real.
+upside: 4.0     # bull case as a reward multiple (e.g. 4x)
+downside: 0.5   # loss if the thesis breaks (e.g. -50%)
+horizon: 12mo   # optional — accumulate over the year (DCA-style). Omit to use the global default pace.

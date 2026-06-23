@@ -1,0 +1,5 @@
+thesis: demo-chip
+# MOCK shape — illustrates the bet.yaml format. Not real.
+upside: 2.0     # bull case as a reward multiple
+downside: 0.5   # loss if the thesis breaks
+# horizon omitted → uses the global entry_half_life default

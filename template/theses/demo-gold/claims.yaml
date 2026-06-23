@@ -1,0 +1,32 @@
+thesis: demo-gold
+generated: 2026-06-20
+note: MOCK claims for demonstrating the verdict→bet→execution loop. Not real.
+
+# conviction (this thesis) = min(load-bearing scores) = min(30, 45) = 30
+
+claims:
+  - id: gold-real-rates-capped
+    claim: "Real rates stay capped, supporting gold"
+    load_bearing: true
+    falsification:
+      mode: any
+      legs:
+        - class: quantitative
+          predicate: "10y real yield rises > 75bps over the quarter"
+          evaluate_on: close
+    fetch: "TIPS real-yield series"
+    score: 30
+    score_updated: 2026-06-20
+
+  - id: gold-hedge-value
+    claim: "Gold retains hedge value vs equities (negative correlation holds)"
+    load_bearing: true
+    falsification:
+      mode: any
+      legs:
+        - class: quantitative
+          predicate: "90-day gold/equity correlation turns positive > 0.3"
+          evaluate_on: close
+    fetch: "price series"
+    score: 45
+    score_updated: 2026-06-20

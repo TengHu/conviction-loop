@@ -1,0 +1,43 @@
+thesis: demo-cloud
+generated: 2026-06-20
+note: MOCK claims for demonstrating the verdict→bet→execution loop. Not real.
+
+# conviction (this thesis) = min(load-bearing scores) = min(95, 90, 92) = 90
+
+claims:
+  - id: cloud-supply-constrained
+    claim: "MCLD is supply-constrained; revenue misses are build-out delay, not weak demand"
+    load_bearing: true
+    falsification:
+      mode: any
+      legs:
+        - class: textual
+          predicate: "Management withdraws 'sold out' language in any public statement"
+    fetch: "MCLD earnings transcripts; IR statements"
+    score: 95
+    score_updated: 2026-06-20
+
+  - id: cloud-2026-sold-out
+    claim: "2026 capacity is contracted / sold out"
+    load_bearing: true
+    falsification:
+      mode: any
+      legs:
+        - class: textual
+          predicate: "Contracted-capacity (backlog) growth turns negative for two quarters"
+    fetch: "MCLD 10-Q backlog disclosure"
+    score: 90
+    score_updated: 2026-06-20
+
+  - id: cloud-margin-inflection
+    claim: "Gross margin inflects positive in H2 2026"
+    load_bearing: true
+    falsification:
+      mode: any
+      legs:
+        - class: quantitative
+          predicate: "Reported gross margin < 0% in the most recent quarter"
+          evaluate_on: report
+    fetch: "MCLD income statement"
+    score: 92
+    score_updated: 2026-06-20
