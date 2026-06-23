@@ -1,4 +1,4 @@
-# thesis-loop
+# conviction-loop
 
 A lean, file-based **investing loop for Claude Code**. You curate noisy signal in; the framework atomizes it into falsifiable claims, verifies them daily into decaying conviction scores, turns conviction + your written goal into sized bets, and hands you broker-ready tickets. **The default output is nothing** — most things die at every gate. A trade is what survives.
 

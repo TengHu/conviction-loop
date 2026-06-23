@@ -10,5 +10,8 @@ book/
 # Cloned reference repos, scratch
 oss/
 
+# Personal scratch notes
+NOTES.md
+
 .DS_Store
 *.lock
